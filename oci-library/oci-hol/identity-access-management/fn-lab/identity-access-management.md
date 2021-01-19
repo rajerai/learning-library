@@ -22,8 +22,7 @@ There is a recording of the instructor going through this lab here:
 A compartment is a collection of cloud assets, like compute instances, load balancers, databases, etc. By default, a root compartment was created for you when you created your tenancy (ie when you registered for the trial account). It is possible to create everything in the root compartment, but Oracle recommends that you create sub-compartments to help manage your resources more efficiently.
 
 1. From the menu, select **Governance and Administration** > **Identity** > **Identity** > **Compartments**. Click on the blue **Create Compartment** button to create a sub-compartment.
-
-   ![Create a compartment](images/img005.png)
+   ![Create a compartment](images/image005.png)
    ![Create a compartment](images/img009.png)
 
 2. Name the compartment **Demo** and provide a short description. Be sure your root compartment is shown as the parent compartment. Press the blue **Create Compartment** button when ready.
