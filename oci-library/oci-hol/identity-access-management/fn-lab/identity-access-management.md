@@ -51,13 +51,13 @@ We'll create a user, a group, and a security policy to understand the concept.
 
    ![Create Group](images/image005.png)
 
-4. Click on your new group to display it. Your new group is displayed.
+4. Your new group is created and displayed.
 
    ![New group is shown](images/image006.png)
 
 5. Now, let’s create a security policy that gives your group permissions in your assigned compartment. For example, create a policy that gives permission to compartment **Demo** to members or group oci-group:
 
-   a) On the **Menu** click **Identity**, and then click **Policies**.
+   a) On the **Menu** click **Governance and Administration** > **Identity** > **Policies**.
 
    b) On the left side, select **Demo** compartment.
    ![Select ***Demo** compartment](images/img007.png)
@@ -82,7 +82,7 @@ We'll create a user, a group, and a security policy to understand the concept.
 
 6. Create a New User
 
-   a) On the **Menu** click **Identity**, and then click **Users**.
+   a) On the **Menu** click click **Governance and Administration** > **Identity** > **Users**.
       ![](images/img0013.png)
 
    b) Click **Create User**.
