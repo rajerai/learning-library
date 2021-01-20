@@ -21,8 +21,9 @@ There is a recording of the instructor going through this lab here:
 
 A compartment is a collection of cloud assets, like compute instances, load balancers, databases, etc. By default, a root compartment was created for you when you created your tenancy (ie when you registered for the trial account). It is possible to create everything in the root compartment, but Oracle recommends that you create sub-compartments to help manage your resources more efficiently.
 
-1. From the menu, select **Governance and Administration** > **Identity** > **Identity** > **Compartments**. Click on the blue **Create Compartment** button to create a sub-compartment.
-   ![Create a compartment](images/img005new.png)
+1. From the menu, select **Identity** and **Compartments**. Click on the blue **Create Compartment** button to create a sub-compartment.
+
+   ![Create a compartment](images/img005.png)
    ![Create a compartment](images/img009.png)
 
 2. Name the compartment **Demo** and provide a short description. Be sure your root compartment is shown as the parent compartment. Press the blue **Create Compartment** button when ready.
@@ -37,7 +38,7 @@ A user's permissions to access services comes from the _groups_ to which they be
 
 We'll create a user, a group, and a security policy to understand the concept.
 
-1. Sign in to the console, on the **Menu** select **Governance and Administration** > **Identity** >  **Groups**.
+1. Sign in to the console, on the **Menu** click **Identity**, then select **Groups**.
    ![Create a group](images/img0010.png)
 
 2. Click **Create Group**.
@@ -51,13 +52,13 @@ We'll create a user, a group, and a security policy to understand the concept.
 
    ![Create Group](images/image005.png)
 
-4. Your new group is created and displayed.
+4. Click on your new group to display it. Your new group is displayed.
 
    ![New group is shown](images/image006.png)
 
 5. Now, let’s create a security policy that gives your group permissions in your assigned compartment. For example, create a policy that gives permission to compartment **Demo** to members or group oci-group:
 
-   a) On the **Menu** click **Governance and Administration** > **Identity** > **Policies**.
+   a) On the **Menu** click **Identity**, and then click **Policies**.
 
    b) On the left side, select **Demo** compartment.
    ![Select ***Demo** compartment](images/img007.png)
@@ -82,7 +83,7 @@ We'll create a user, a group, and a security policy to understand the concept.
 
 6. Create a New User
 
-   a) On the **Menu** click click **Governance and Administration** > **Identity** > **Users**.
+   a) On the **Menu** click **Identity**, and then click **Users**.
       ![](images/img0013.png)
 
    b) Click **Create User**.
