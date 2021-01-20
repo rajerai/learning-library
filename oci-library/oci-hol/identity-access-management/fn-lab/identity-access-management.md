@@ -71,15 +71,15 @@ We'll create a user, a group, and a security policy to understand the concept.
    d) Enter a unique **Name** for your policy (For example, "Policy-for-oci-group") **Note that the name can NOT contain spaces.**
 
    e) Enter a **Description** (for example, "Policy for OCI Group").
-
-   f) Enter the following **Statement**:
+   
+   f) Click **Customize(Advanced)** link and enter the following **Statement**:
      ```
      <copy>Allow group oci-group to manage all-resources in compartment Demo</copy>
      ```
 
    g) Click **Create**.
 
-   ![Create](images/image007.png)
+   ![Create](images/image007new.png)
 
 6. Create a New User
 
@@ -93,7 +93,7 @@ We'll create a user, a group, and a security policy to understand the concept.
       - **Name:** Enter a unique name or email address for the new user.
       _This value is the user's login name for the Console and it must be unique across all other users in your tenancy._
       - **Description:** Enter a description. For example, New `oci user`.
-      - **Email:** I recommend using a personal email address to which you have access (GMail, Yahoo, etc).
+      - **Email:**  Preferably use a personal email address to which you have access (GMail, Yahoo, etc).
 
       ![New user form](images/img008.png)
 
@@ -146,7 +146,7 @@ We'll create a user, a group, and a security policy to understand the concept.
 
 9. Verify user permissions
 
-   a) Go to the **Menu** click **Compute** and **Instances**.
+   a) Go to the **Menu**, click **Compute** and then click **Instances**.
 
    b) Try to select any compartment from the left menu.
 
@@ -158,10 +158,11 @@ We'll create a user, a group, and a security policy to understand the concept.
 10. Add User to a Group
 
       a) Sign back in with the ***admin*** account.
-      b) From the **Users** list, click the user account that you just created (for example, `user01`)  to go to the user details page.
+      
+      b) On the Menu click Identity, and then click Users. From the **Users** list, click the user account that you just created (for example, `User01`)  to go to the User Details page.
          ![](images/image019.png)
-
-      c) Under the **Resources** menu on the left, click **Groups.**
+      
+      c) Under the **Resources** menu on the left, click **Groups.** if its not already selected.
 
       d) Click **Add User to Group**.
          ![](images/image020.png)
@@ -175,9 +176,9 @@ We'll create a user, a group, and a security policy to understand the concept.
 
 11. Verify user permissions when a user belongs to a specific group
 
-      a) Sign in with the local user01 account you created. Remember to use the latest password you assigned to this user (_Welc0me2*bmcs_).
+      a) Sign in with the local User01 account you created. Remember to use the latest password you assigned to this user (_Welc0me2*bmcs_).
 
-      b) Go to the **Menu** click **Compute** and **Instances**.
+      b) Go to the **Menu**, click **Compute** and then click **Instances**.
 
       c) Select compartment **Demo** from the list of compartments on the left.
 
@@ -185,7 +186,7 @@ We'll create a user, a group, and a security policy to understand the concept.
 
       d) There is no message related to permissions and you are allowed to create new instances
 
-      e) Go to the **Menu** click **Identity** and select **Groups.**
+      e) Go to the **Menu**, click **Identity** and select **Groups.**
 
       f) The message **“Authorization failed or requested resource not found”** appears. This is expected, since your user has no permission to modify groups. (Note: You may instead get the "An unexpected error occurred" message instead. That is also fine.)
          ![](images/image021.png)
@@ -199,7 +200,7 @@ We'll create a user, a group, and a security policy to understand the concept.
 - **Author** - Flavio Pereira, Larry Beausoleil
 - **Adapted by** -  Tom McGinn, Database Product Management
 - **Contributors** - Arabella Yao, Product Manager Intern, DB Product Management
-- **Last Updated By/Date** - Tom McGinn, October 2020
+- **Last Updated By/Date** - Tom McGinn, January 2021
 
 ## Need Help?
 Please submit feedback or ask for help using our [LiveLabs Support Forum](https://community.oracle.com/tech/developers/categories/oracle-cloud-infrastructure-fundamentals). Please click the **Log In** button and login using your Oracle Account. Click the **Ask A Question** button to the left to start a *New Discussion* or *Ask a Question*.  Please include your workshop name and lab name.  You can also include screenshots and attach files.  Engage directly with the author of the workshop.
