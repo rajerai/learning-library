@@ -19,8 +19,7 @@ There is a recording of the instructor going through this lab here:
 - To sign in to the Console, you need the following:
   - Tenant, User name and Password
   - URL for the Console: [https://cloud.oracle.com](https://cloud.oracle.com)
-  - Oracle Cloud Infrastructure supports the latest versions of Google Chrome, Firefox and Internet Explorer 11
-
+  
 *Please proceed to the next lab*
 
 ## Acknowledgements
