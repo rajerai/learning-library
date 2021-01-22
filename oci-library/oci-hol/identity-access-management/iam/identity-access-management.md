@@ -15,8 +15,7 @@ There is a recording of the instructor going through this lab here:
 - Oracle Cloud Infrastructure account credentials (User, Password, and Tenant)
 - To sign in to the Console, you need the following:
   - Tenant, User name and Password
-  - Oracle Cloud Infrastructure supports the latest versions of Google Chrome, Firefox and Internet Explorer 11
-
+ 
 ## **STEP 1**: Creating Compartments
 
 A compartment is a collection of cloud assets, like compute instances, load balancers, databases, etc. By default, a root compartment was created for you when you created your tenancy (ie when you registered for the trial account). It is possible to create everything in the root compartment, but Oracle recommends that you create sub-compartments to help manage your resources more efficiently.
@@ -123,11 +122,11 @@ We'll create a user, a group, and a security policy to understand the concept.
 
 8. Sign in as the new user using a different web browser or an incognito window.
 
-    a) Open a supported browser and go to the Console URL:  [https://oracle.com](https://oracle.com).
+    a) Open a supported browser and go to the Console URL:  [https://cloud.oracle.com](https://cloud.oracle.com).
 
     b) Click on the portrait icon in the top-right section of the browser window, then click on the **Sign in to Cloud** link.
 
-    ![Main Sign-in page](images/img001.png)
+    ![Main Sign-in page](images/img001new.png)
 
    c) Enter the name of your tenancy (aka your account name, not your user name), then click on the **Next** button.
 
@@ -141,7 +140,7 @@ We'll create a user, a group, and a security policy to understand the concept.
 
    **Note:** _Since this is the first-time sign-in, the user will be prompted to change the temporary password, as shown in the screen capture._
 
-   f) Set the new password to _Welc0me2*bmcs_. Click **Save New Password**.
+   f) Set the new password. Click **Save New Password**.
       ![Set the new password](images/image015.png)
 
 9. Verify user permissions
@@ -176,7 +175,7 @@ We'll create a user, a group, and a security policy to understand the concept.
 
 11. Verify user permissions when a user belongs to a specific group
 
-      a) Sign in with the local User01 account you created. Remember to use the latest password you assigned to this user (_Welc0me2*bmcs_).
+      a) Sign in with the local User01 account you created. Remember to use the latest password you assigned to this user.
 
       b) Go to the **Menu**, click **Compute** and then click **Instances**.
 
@@ -197,10 +196,10 @@ We'll create a user, a group, and a security policy to understand the concept.
 
 ## Acknowledgements
 
-- **Author** - Flavio Pereira, Larry Beausoleil
+- **Author** - Rajeshwari Rai, Prasenjit Sarkar
 - **Adapted by** -  Tom McGinn, Database Product Management
 - **Contributors** - Arabella Yao, Product Manager Intern, DB Product Management
-- **Last Updated By/Date** - Tom McGinn, January 2021
+- **Last Updated By/Date** - Rajeshwari Rai, January 2021
 
 ## Need Help?
 Please submit feedback or ask for help using our [LiveLabs Support Forum](https://community.oracle.com/tech/developers/categories/oracle-cloud-infrastructure-fundamentals). Please click the **Log In** button and login using your Oracle Account. Click the **Ask A Question** button to the left to start a *New Discussion* or *Ask a Question*.  Please include your workshop name and lab name.  You can also include screenshots and attach files.  Engage directly with the author of the workshop.
