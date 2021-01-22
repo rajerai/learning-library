@@ -21,6 +21,7 @@ Estimated time: 10 minutes
 
 If you want to use an existing compartment, skip to the next step. Otherwise, click **Compartments** and then **Create Compartment**, to create a new compartment.
 
+<<<<<<< HEAD
 ## **STEP 2:** Create VCN and subnets
 
 If a suitable VCN in which to create network resources doesn't exist already, log in to the Console as a tenancy administrator and under Core Infrastructure, go to **Networking** and then:
@@ -55,13 +56,20 @@ Log in to the Console as a **tenancy administrator** and under Governance and Ad
 
 Make sure the user is part of the group referenced in the policy statements above. To create groups and add users to groups, refer to [Create a group](https://docs.cloud.oracle.com/en-us/iaas/Content/Identity/Tasks/managinggroups.htm#To).
 
+=======
+>>>>>>> d37571463bfcbf996ec0c8763cd5abf4b24b981b
 You may now [proceed to the next lab](#next).
 
 ## Acknowledgements
 
 - **Author** - Greg Verstraeten
+<<<<<<< HEAD
 - **Contributors** -  Peter Jausovec, Prasenjit Sarkar, Adao Junior
 - **Last Updated By/Date** - Adao Junior, October 2020
+=======
+- **Contributors** -  Rajeshwari Rai, Prasenjit Sarkar
+- **Last Updated By/Date** - Rajeshwari Rai, January 2021
+>>>>>>> d37571463bfcbf996ec0c8763cd5abf4b24b981b
 
 ## Need Help?
 
