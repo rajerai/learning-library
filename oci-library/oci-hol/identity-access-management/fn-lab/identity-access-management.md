@@ -15,8 +15,7 @@ There is a recording of the instructor going through this lab here:
 - Oracle Cloud Infrastructure account credentials (User, Password, and Tenant)
 - To sign in to the Console, you need the following:
   - Tenant, User name and Password
-  - Oracle Cloud Infrastructure supports the latest versions of Google Chrome, Firefox and Internet Explorer 11
-
+  
 ## **STEP 1**: Creating Compartments
 
 A compartment is a collection of cloud assets, like compute instances, load balancers, databases, etc. By default, a root compartment was created for you when you created your tenancy (ie when you registered for the trial account). It is possible to create everything in the root compartment, but Oracle recommends that you create sub-compartments to help manage your resources more efficiently.
@@ -123,7 +122,7 @@ We'll create a user, a group, and a security policy to understand the concept.
 
 8. Sign in as the new user using a different web browser or an incognito window.
 
-    a) Open a supported browser and go to the Console URL:  [https://oracle.com](https://oracle.com).
+    a) Open a supported browser and go to the Console URL:  [https://cloud.oracle.com](https://cloud.oracle.com).
 
     b) Click on the portrait icon in the top-right section of the browser window, then click on the **Sign in to Cloud** link.
 
@@ -141,7 +140,7 @@ We'll create a user, a group, and a security policy to understand the concept.
 
    **Note:** _Since this is the first-time sign-in, the user will be prompted to change the temporary password, as shown in the screen capture._
 
-   f) Set the new password to _Welc0me2*bmcs_. Click **Save New Password**.
+   f) Set the new password. Click **Save New Password**.
       ![Set the new password](images/image015.png)
 
 9. Verify user permissions
@@ -176,7 +175,7 @@ We'll create a user, a group, and a security policy to understand the concept.
 
 11. Verify user permissions when a user belongs to a specific group
 
-      a) Sign in with the local User01 account you created. Remember to use the latest password you assigned to this user (_Welc0me2*bmcs_).
+      a) Sign in with the local User01 account you created. Remember to use the latest password you assigned to this user.
 
       b) Go to the **Menu**, click **Compute** and then click **Instances**.
 
