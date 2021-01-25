@@ -10,7 +10,7 @@
           "filename": "./../../../intro/intro.md"
       },
       {
-          "title": "Lab 1: Identity Access Management",
+          "title": "Lab 1: Virtual Cloud Networks",
 		      "type": "livelabs",
           "filename": "./../../virtual-cloud-networks.md"
       }

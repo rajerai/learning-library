@@ -5,9 +5,9 @@ Get hands-on learning with training labs about Oracle cloud solutions. The works
 
 Estimated workshop time: 30 minutes
 
-### OCI Identity and Access Management Service
+### OCI Virtual Cloud Networks Service
 
-Oracle Cloud Infrastructure Identity and Access Management (IAM) Service lets you control who has access to your cloud resources. You control the types of access a group of users has and to which specific resources. The purpose of this lab is to give you an overview of the IAM Service components and an example scenario to help you understand how they work together.
+A Virtual Cloud Network (VCN) is a software-defined network that you set up in the Oracle Cloud Infrastructure data centers in a particular region. It enables your cloud resources to securely communicate through the internet with other instances running in OCI or your on-premises data centers. The purpose of this lab is to give you an overview of the VCN Service components and an example scenario to help you understand how to set up a VCN.
 
 There is a recording of the instructor going through this lab here:
 

@@ -1,8 +1,8 @@
-# Prerequisites for IAM
+# Prerequisites for VCN
 
 ## Introduction
 
-The following steps represents the prerequisites for the IAM Lab.
+The following steps represents the prerequisites for the VCN Lab.
 
 Estimated time: 5 minutes
 

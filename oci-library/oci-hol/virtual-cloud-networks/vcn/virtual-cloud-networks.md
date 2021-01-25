@@ -13,8 +13,7 @@ Be sure to review [Overview of Networking](https://docs.cloud.oracle.com/iaas/Co
 To sign in to the Console, you need the following:
 
 - Tenant, User name and Password
-- URL for the Console: [https://console.us-ashburn-1.oraclecloud.com/](https://console.us-ashburn-1.oraclecloud.com/)
-- Oracle Cloud Infrastructure supports the latest versions of Google Chrome, Firefox and Internet Explorer 11. ***It does not support the Edge browser***.
+- URL for the Console: [https://cloud.oracle.com/](https://cloud.oracle.com/)
 
 ## **STEP 1**: Create Your VCN
 
@@ -33,7 +32,7 @@ To create a VCN on Oracle Cloud Infrastructure:
 
 2. Select **VCN with Internet Connectivity**, and then click **Start VCN Wizard**.
 
-    ![Start VCN Wizard](images/setupVCN2.png " ")
+    ![Start VCN Wizard](images/setupVCN2new.png " ")
 
 3. Complete the following fields:
 
@@ -50,12 +49,12 @@ To create a VCN on Oracle Cloud Infrastructure:
 
     ![Create a VCN Configuration|Foobar](images/setupVCN3.png " ")
 
-4. Press the **Next** button at the bottom of the screen.
+4. Click the **Next** button at the bottom of the screen.
 
 5. Review your settings to be sure they are correct.
     ![Review CV Configuration](images/setupVCN4.png " ")
 
-6. Press the **Create** button to create the VCN. It will take a moment to create the VCN and a progress screen will keep you apprised of the workflow.
+6. Click the **Create** button to create the VCN. It will take a moment to create the VCN and a progress screen will keep you apprised of the workflow.
 
     ![Workflow](images/workflow.png " ")
 
