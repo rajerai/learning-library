@@ -13,7 +13,7 @@
       {
           "title": "Lab 2: Create a Compute Service",
           "type": "freetier",
-          "filename": "./../../compute-service-sandbox.md"
+          "filename": "./../../../cs/compute-service-sandbox.md"
       }
     ]
 }
