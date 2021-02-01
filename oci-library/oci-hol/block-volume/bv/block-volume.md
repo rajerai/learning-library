@@ -15,8 +15,7 @@ This video provides an overview of creating and attaching Oracle Cloud Infrastru
 - To sign in to the Console, you need the following:
   -  Tenant, User name and Password
   -  URL for the Console: [https://cloud.oracle.com/](https://cloud.oracle.com/)
-  -  Oracle Cloud Infrastructure supports the latest versions of Google Chrome, Firefox and Internet Explorer 11
-
+ 
 ## **STEP 1**: Create a Block Volume
 
 A common usage of Block Volume is adding storage capacity to an Oracle Cloud Infrastructure instance. Once you have launched an instance and set up your cloud network, you can create a block storage volume through the Console or API. Once created, you attach the volume to an instance using a volume attachment. Once attached, you connect to the volume from your instance's guest OS using iSCSI or paravirtualized mode. The volume can then be mounted and used by your instance.
@@ -64,7 +63,7 @@ A common usage of Block Volume is adding storage capacity to an Oracle Cloud Inf
 
     - **iSCSI:** iSCSI attachments are the only option when connecting block volumes to bare metal instances. Once the volume is attached, you need to log in to the instance and use the iscsiadm command-line tool to configure the iSCSI connection
 
-     - **Paravirtualized** Paravirtualized attachments are now an option when attaching volumes to VM instances. For VM instances launched from Oracle-Provided Images, you can select this option for Linux-based images published. Once you attach a volume using the paravirtualized attachment type, it is ready to use, you do not need to run any additional commands. However, due to the overhead of virtualization, this reduces the maximum IOPS performance for larger block volumes, see [Paravirtualized Attachment Performance](https://docs.cloud.oracle.com/iaas/Content/Block/Concepts/blockvolumeperformance.htm#paraPerf) for more information.
+     - **Paravirtualized:** Paravirtualized attachments are now an option when attaching volumes to VM instances. For VM instances launched from Oracle-Provided Images, you can select this option for Linux-based images published. Once you attach a volume using the paravirtualized attachment type, it is ready to use, you do not need to run any additional commands. However, due to the overhead of virtualization, this reduces the maximum IOPS performance for larger block volumes, see [Paravirtualized Attachment Performance](https://docs.cloud.oracle.com/iaas/Content/Block/Concepts/blockvolumeperformance.htm#paraPerf) for more information.
 
 2. Go to the Compute instance Menu, and navigate to the VM instance you created before and click on the **Attached Block Volumes** link.
 
@@ -119,14 +118,14 @@ A common usage of Block Volume is adding storage capacity to an Oracle Cloud Inf
 
     ![](images/format-mount.png " ")
 
-    **Note** When mounting a storage volume for the first time, you can format the storage volume and create a single, primary partition that occupies the entire volume by using fdisk command (Caution: Using fdisk to format the disk deletes any data on the disk).
+    **Note:** When mounting a storage volume for the first time, you can format the storage volume and create a single, primary partition that occupies the entire volume by using fdisk command (Caution: Using fdisk to format the disk deletes any data on the disk).
 
 ## Acknowledgements
 
-- **Author** - Flavio Pereira, Larry Beausoleil
+- **Author** - Rajeshwari Rai, Prasenjit Sarkar
 - **Adapted by** -  Tom McGinn, Database Product Management
 - **Contributors** - Oracle LiveLabs QA Team (Kamryn Vinson, QA Intern, Arabella Yao, Product Manager Intern, DB Product Management)
-- **Last Updated By/Date** - Tom McGinn, October 2020
+- **Last Updated By/Date** - Rajeshwari Rai, February 2021
 
 ## Need Help?
 Please submit feedback or ask for help using our [LiveLabs Support Forum](https://community.oracle.com/tech/developers/categories/oracle-cloud-infrastructure-fundamentals). Please click the **Log In** button and login using your Oracle Account. Click the **Ask A Question** button to the left to start a *New Discussion* or *Ask a Question*.  Please include your workshop name and lab name.  You can also include screenshots and attach files.  Engage directly with the author of the workshop.
