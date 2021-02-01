@@ -4,7 +4,7 @@
 
 The following steps represents the prerequisites for the Block Volume Lab.
 
-Estimated time: 5 minutes
+Estimated time: 10 minutes
 
 ### Objectives
 
