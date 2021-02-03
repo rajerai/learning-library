@@ -13,7 +13,7 @@
       {
           "title": "Lab 1: Create an Object Storage Service",
           "type": "freetier",
-          "filename": "./../../object-storage.md"
+          "filename": "./../../os/object-storage.md"
       }
     ]
 }
