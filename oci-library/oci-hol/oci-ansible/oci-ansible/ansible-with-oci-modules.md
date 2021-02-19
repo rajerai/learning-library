@@ -70,6 +70,13 @@ In this section we will download sample Ansible resources and configure it to wo
     ```
 
 3. Save and exit the file.
+    
+	```
+    <copy>
+    :wq
+    </copy>
+    ```
+    
 4. Load the variables in the above file into ENV
 
     ```
@@ -79,7 +86,7 @@ In this section we will download sample Ansible resources and configure it to wo
     ```
 
 5. You will also need to update the ``oci_inventory.ini`` file for the dynamic inventory script.  Uncomment the compartment setting and replace the value with your compartment ocid.
-    ![](./../ansible-with-oci-modules/images/ansible_004.png " ")
+    ![](../images/ansible_004.png " ")
 
 6. Run the first sample playbook.  This will list some information about any compute resources you have in the compartment (should be the one you are using right now).
 
@@ -88,7 +95,7 @@ In this section we will download sample Ansible resources and configure it to wo
     ansible-playbook sample.yaml
     </copy>
     ```
-    ![](./../ansible-with-oci-modules/images/ansible_001.jpg " ")
+    ![](../images/ansible_001.jpg " ")
 
 7. If the output is devoid of errors, it is time to deploy our sample infrastructure.
 
@@ -145,7 +152,7 @@ In this exercise, all of the resources provisioned by Ansible were also tagged. 
 
 - **Author** - Flavio Pereira
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer
-- **Last Updated By/Date** - Tom McGinn, October 2020
+- **Last Updated By/Date** - Rajeshwari Rai, February 2021
 - **Workshop (or Lab) Expiry Date** - October 2021
 
 ## Need Help?

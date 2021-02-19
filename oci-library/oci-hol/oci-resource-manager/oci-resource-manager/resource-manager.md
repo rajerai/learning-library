@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab, you will create configure identity access manager, create a resource manager stack, and execute the stack job.  As an optional exercise, you can migrate your Terraform configuration to Gitlab and redirect the source of your resource manager stack.
+In this lab, you will configure identity access manager, create a resource manager stack, and execute the stack job.  As an optional exercise, you can migrate your Terraform configuration to Gitlab and redirect the source of your resource manager stack.
 
 **Note:** *Some of the UIs might look a little different than the screenshots included in the instructions. However, you can still use the instructions to complete the hands-on labs.*
 
@@ -26,11 +26,7 @@ We recommend you use the Oracle Cloud Shell to interface with the OCI compute in
 
 1. To start the Oracle Cloud shell, go to your Cloud console and click the cloud shell icon at the top right of the page.
 
-  ![](./../resource-manager/images/cloudshellopen.png " ")
-
-  ![](./../resource-manager/images/cloudshellsetup.png " ")
-
-  ![](./../resource-manager/images/cloudshell.png " ")
+  ![](../images/cloudshellopen.png " ")
 
 
 2. Once the cloud shell has started, enter the following command to generate a SSH Key. Press Enter twice for no passphrase.
@@ -49,7 +45,7 @@ Note in the output that there are two files, a private key: <<ssh-keyname>> and 
 
 1. Create a Stack by clicking on **Menu** --> **Resource Manager** --> **Stacks**.
 
-    ![](./../resource-manager/images/CreateStack00.png " ")
+    ![](../images/CreateStack00.png " ")
 
 2. Click **Create Stack**.
 
@@ -62,7 +58,7 @@ Note in the output that there are two files, a private key: <<ssh-keyname>> and 
       - **Create in Compartment:** Select an existing compartment
       - **Terraform Version:** Select 0.12.x
 
-    ![](./../resource-manager/images/CreateStack01.png " ")
+    ![](../images/CreateStack01.png " ")
 
 3. Click **Next**.   
       - **Configure Variables:** Configure the variables for the infrastructure resources that this stack will create when you run the apply job for this execution plan.
@@ -75,17 +71,17 @@ Note in the output that there are two files, a private key: <<ssh-keyname>> and 
         - **Enter your CIDR Block:** 10.0.0.0/16
         - **Enter your Subnet Name:** subnet
 
-        ![](./../resource-manager/images/CreateStack02.png " ")
+        ![](../images/CreateStack02.png " ")
 
 4. Click **Next**.
       - **Verify your configuration variables**
       - Click **Create**
 
-     ![](./../resource-manager/images/CreateStack03.png " ")
+     ![](../images/CreateStack03.png " ")
 
 5. Before moving on to executing a job, quickly review the newly configured stack and then click on the hyperlinked stack name.
 
-    ![](./../resource-manager/images/image002.png " ")
+    ![](../images/image002.png " ")
 
 ## **Step 3:** Execute Jobs: Plan & Apply
 
@@ -98,19 +94,19 @@ From the Stack Details page, we can completely manage the stack's configuration 
       - **Name:** HA LB App Plan
       - Click **Plan**
 
-    ![](./../resource-manager/images/image003.png " ")
+    ![](../images/image003.png " ")
 
-    ![](./../resource-manager/images/image004.png " ")
+    ![](../images/image004.png " ")
 
     **Note:** Once the modal closes, notice the job's state appears as "Accepted" - which indicates that the platform is spinning up resources needed for executing the command  - followed by "In Progress" and then either "Succeeded" or "Failed".
 
-    ![](./../resource-manager/images/image005.png " ")
+    ![](../images/image005.png " ")
 
 2. Once the job succeeded, on the Job Details page review the information and scroll through the logs containing the Terraform output. You may also edit the job or download the Terraform Configuration and logs.
 
-3. Since the previous plan action succeeded, lets go back to the Stack page by clicking Stack Details breadcrumb on top of the page. On the Stack details page you can select the Apply from the Terraform Actions menu. Click on **Terraform Actions** --> **Apply**.
+3. Since the previous plan action succeeded, lets go back to the Stack page by clicking Stack Details breadcrumb on top of the page. On the Stack details page, click on **Terraform Actions** --> **Apply**.
 
-    ![](./../resource-manager/images/image007.png " ")
+    ![](../images/image007.png " ")
 
 4. Enter the following information:
 
@@ -118,31 +114,29 @@ From the Stack Details page, we can completely manage the stack's configuration 
       - **Apply Job Plan Resolution** HA LB App Plan (you can select the latest succeed plan job to apply)
       - Click **Apply**
 
-    ![](./../resource-manager/images/image008.png " ")
+    ![](../images/image008.png " ")
 
 5. The job state is updated as the job execution nears completion:
 
-   ![](./../resource-manager/images/image009.png " ")
-   ![](./../resource-manager/images/image010.png " ")
-   ![](./../resource-manager/images/image011.png " ")
+   ![](../images/image011.png " ")
 
-6. Once the apply action succeeds, verify the resources have been provisioned by reading the Terraform output contained with the logs or navigate to Networking and view the different resources that now exist (VCN, load balancer, subnets, etc.) and that the 2 instances are listed in Compute. The Health Status of the Load Balancer will need a few minutes to get into OK status.
+6. Once the Apply action succeeds, verify the resources have been provisioned by reading the Terraform output contained with the logs or navigate to Networking and view the different resources that now exist (VCN, load balancer, subnets, etc.) and that the 2 instances are listed in Compute. The Health Status of the Load Balancer will need a few minutes to get into OK status.
 
-    ![](./../resource-manager/images/image012.png " ")
-    ![](./../resource-manager/images/image013.png " ")
+    ![](../images/image012.png " ")
+    ![](../images/image013.png " ")
 
-7. When you see the Load Balancer status change to OK, copy the **IP Address** and paste it into a new web browser tab.  You should see the sample web page load and atop the page it indicates which web server you are connected to.  Press **F5** a couple of times and see the web server change as you refresh the page.  Congratulations - your sample application deployed successfully.
+7. When you see the Load Balancer status change to OK, copy the **IP Address** and paste it into a new web browser tab.  You should see the sample web page load and atop the page it indicates which web server you are connected to.  Press **F5** a couple of times and see the web server change as you refresh the page.  Congratulations - your sample application is deployed successfully.
 
 ## **Step 4:** (OPTIONAL) Migrate source code to Gitlab
 
-As you often hear Terraform referred to as Infrastructure is Code, an optimal strategy includes the use of source control for all Terraform configuration.  With resource manager, you can integrate directly to your source control through the use of **Configuration Source Providers**.  In this section you will create a new configuration source provider using Gitlab and store your configuration.  To test it out, you will make a small change to your code and apply (update) the stack.  Watch as ORM pulls directly from Gitlab.
+As you often hear Terraform referred to as Infrastructure as Code, an optimal strategy includes the use of source control for all Terraform configuration.  With resource manager, you can integrate directly to your source control through the use of **Configuration Source Providers**.  In this section you will create a new configuration source provider using Gitlab and store your configuration.  To test it out, you will make a small change to your code and apply (update) the stack.  Watch as ORM pulls directly from Gitlab.
 
 **Important** This exercise requires some working experience with Git, and an account with gitlab.com.  You can set up a free account here:
 https://gitlab.com/users/sign_up
 
 1. In order to create a configuration source provider, you will need an **Access Token** for gitlab.com.  First you need to login to your GitLab Account and, once logged into gitlab.com, navigate to: "https://gitlab.com/-/profile/personal_access_tokens".  Enter the following details:
 
-    ![](./../resource-manager/images/ConfigSource01.png " ")
+    ![](../images/ConfigSource01.png " ")
 
       - Name
       - Expires at
@@ -153,13 +147,13 @@ https://gitlab.com/users/sign_up
 
 2. The screen wil display your personal access token at the top of the page. Copy and save the token.
 
-   ![](./../resource-manager/images/gitoken.png " ")
+   ![](../images/gitoken.png " ")
 
-3. Return to the resource manager console and navigate to configuration source providers.  Click **Create Configuration Source Provider**.
+3. Return to the resource manager console and navigate to Configuration Source Providers.  Click **Create Configuration Source Provider**.
 
 4. Complete the required fields as follows and click **Create**:
 
-    ![](./../resource-manager/images/ConfigSource02.png " ")
+    ![](../images/ConfigSource02.png " ")
 
     ...pasting the PAT created in step 1.
 
@@ -171,7 +165,7 @@ https://gitlab.com/users/sign_up
 
 6. In order to modify the source for the existing stack, you will need to utilize the Cloud Shell utility to execute a Command Line Interface (CLI) command.  Click the Cloud Shell link in the top right corner of the console.
 
-    ![](./../resource-manager/images/CloudShell.png " ")
+    ![](../images/CloudShell.png " ")
 
 7. When the Cloud Shell console opens, run the following command.  *NOTE* you will need to change the property values to match your environment.
 
@@ -194,7 +188,7 @@ https://gitlab.com/users/sign_up
 
 8. When the command completes, return to Stacks, select the stack created earlier in this lab, and view the stack details to confirm that the changes were applied.
 
-  ![](./../resource-manager/images/UpdateStack01.png " ")
+  ![](../images/UpdateStack01.png " ")
 
 9.  Next, you will need to push your Terraform code to Gitlab.
   
@@ -220,7 +214,7 @@ https://gitlab.com/users/sign_up
 # unzip orm-lbass-demo.zip
 ```
 
-![](./../resource-manager/images/gitsample01.png " ")
+![](../images/gitsample01.png " ")
 
 - Now Add / Commit / Push to Gitlab.
 
@@ -229,13 +223,13 @@ https://gitlab.com/users/sign_up
 # git commit -m "Pushing first version of terraform source to GitLab"
 ```
 
-![](./../resource-manager/images/gitsample02.png " ")
+![](../images/gitsample02.png " ")
 
 ```
 # git push
 ```
 
-![](./../resource-manager/images/gitsample03.png " ")
+![](../images/gitsample03.png " ")
     
   
 10.  Run terraform plan once more.  Your new source (Gitlab) should contain the same code that was used to create the stack initially.  Therefore, the plan will result in ZERO changes.
@@ -263,19 +257,17 @@ Now that we've successfully applied our Terraform to build out our cloud resourc
       - **Name:** HA LB App Destroy
       - Click **Destroy**
 
-    ![](./../resource-manager/images/image014.png " ")
-    ![](./../resource-manager/images/image015.png " ")
-
+    ![](../images/image014.png " ")
+    
 2. Once again, notice that the state change is reflected in the console:  
 
-    ![](./../resource-manager/images/image016.png " ")
+    ![](..images/image016.png " ")
     Wait until the status shows **Succeeded** before proceeding.
 
-3. The final step is to delete the stack by clicking on the Delete Stack button on Stack Details page. Click on **Delete Stack** and confirm it by clicking **Delete** on the modal window.
+3. The final step is to delete the stack by clicking on the More Actions button and selecting Delete Stack on the Stack Details page. Click on **Delete Stack** and confirm it by clicking **Delete** on the modal window.
 
-    ![](./../resource-manager/images/image017.png " ")
-    ![](./../resource-manager/images/image018.png " ")
-
+    ![](../images/new image017.png " ")
+    
 *Congratulations! You have successfully completed the lab.*
 
 ## Acknowledgements
@@ -283,7 +275,7 @@ Now that we've successfully applied our Terraform to build out our cloud resourc
 - **Author** - Flavio Pereira, Larry Beausoleil, Eli Schilling
 - **Adapted by** -  Yaisah Granillo, Cloud Solution Engineer
 - **Contributors** - Arabella Yao, Kamryn Vinson
-- **Last Updated By/Date** - Eli Schilling, October 2020
+- **Last Updated By/Date** - Rajeshwari Rai, February 2021
 - **Valid through** - October 2021
 
 ## Need Help?
